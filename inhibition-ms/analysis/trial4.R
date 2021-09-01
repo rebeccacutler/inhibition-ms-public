@@ -7,16 +7,6 @@
 trials_data = read.csv('/Users/beckycutler/projects/iu-maxcey/E2/results/subjects_148/trials_data_148.csv')
 
 trial4 = trials_data[trials_data$trial_subset1 == 2.2 ,]
-trial4$sp[trial4$object1 == 'C11' | trial4$object2 == 'C11'] = 1
-trial4$sp[trial4$object1 == 'C14' | trial4$object2 == 'C14'] = 3
-trial4$sp[trial4$object1 == 'C21' | trial4$object2 == 'C21'] = 2
-trial4$sp[trial4$object1 == 'C24' | trial4$object2 == 'C24'] = 4
-
-trial4$answer = 0
-trial4$answer[trial4$response_object == 'C11'] = 1
-trial4$answer[trial4$response_object == 'C14'] = 1
-trial4$answer[trial4$response_object == 'C21'] = 1
-trial4$answer[trial4$response_object == 'C24'] = 1
 
 serial_pos4 = trial4 %>%
   group_by(sp) %>%

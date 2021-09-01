@@ -13,12 +13,6 @@ trial10$sp[trial10$object1 == 'Dv4' | trial10$object2 == 'Dv4'] = 2
 trial10$sp[trial10$object1 == 'Dv6' | trial10$object2 == 'Dv6'] = 3
 trial10$sp[trial10$object1 == 'Dv8' | trial10$object2 == 'Dv8'] = 4
 
-trial10$answer = 0
-trial10$answer[trial10$response_object == 'Dv2'] = 1
-trial10$answer[trial10$response_object == 'Dv4'] = 1
-trial10$answer[trial10$response_object == 'Dv6'] = 1
-trial10$answer[trial10$response_object == 'Dv8'] = 1
-
 serial_pos10 = trial10 %>%
   group_by(sp) %>%
   summarise(mean = mean(answer), sem = std.error(answer))

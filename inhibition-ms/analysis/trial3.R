@@ -7,8 +7,6 @@
 trials_data = read.csv('/Users/beckycutler/projects/iu-maxcey/E2/results/subjects_148/trials_data_148.csv')
 
 trial3 = trials_data[trials_data$trial_subset1 == 2.1 | trials_data$trial_subset1 == 6.2 ,]
-trial3$sp[trial3$object1 == 'B11' | trial3$object2 == 'B11'] = 1
-trial3$sp[trial3$object1 == 'B114' | trial3$object2 == 'B114'] = 2
 
 trial3$answer = 0
 trial3$answer[trial3$response_object == 'B11'] = 1
