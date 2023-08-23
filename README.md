@@ -1,2 +1,2 @@
 # inhibition-ms-public
-data + code for 'Inhibition, Context, and Competition Models of Forgetting in Recognition Tests'
+data + code for 'Inhibition is not a significant cause of retrieval-induced forgetting in recognition tasks'
